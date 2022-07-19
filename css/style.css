@@ -1,23 +1,63 @@
-h1{
-    font-family: 'Helvetica';
-    color: purple;
-    background-color: rgb(196, 206, 164);
-}
 body {
-    font-size: 16px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
- }
-
- p {
-    line-height: 1.5;
- }
- .problem_description {
-    color: rgb(207, 228, 131);
-    background-color: rgb(190, 146, 235);
- }
- 
-
- .prior {
-    color: rgb(94, 152, 219);
- }
- 
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div{
+    display: flex;
+  }
+  
+  .sect1{
+    flex-basis: 240px;
+  }
+  
+  .sect2{
+    flex: 1;
+    background-color: #eee;
+  }
+  
+  .sect3{
+    flex-basis: 180px;
+    flex-shrink: 0;
+  }
+  
+  section{
+    padding: 1em;
+  }
+  
+  .new-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card{
+    flex: 0 0 250px;
+    background-color: white;
+    margin: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+  }
+  
+  .card p{
+    padding: .5rem 1rem;
+  }
+  
+  .card img{
+    border-radius: 10px 10px 0 0;
+  }
+  
+  main{
+    flex: 1;
+  }
+  
+  html{
+    height: 100%;
+  }
+  
+  main > div{
+    height: 100%;
+  }
