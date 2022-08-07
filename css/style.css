@@ -175,7 +175,7 @@ body {
     width: fit-content;
   }
 
-  h2 {
+  .resident {
     font-weight: 400;
     color: #b29650;
     }
@@ -190,7 +190,7 @@ body {
     padding: 3px;
     }
     .rate {
-    width: 75%;
+    width: 70%;
     padding: 20px;
     box-shadow: 0 2px 5px #ccc; 
     background: #fafafa;
