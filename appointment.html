@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="logo" type="image" href="/img/logo.png">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Home page of FindMyApartment">
+    <title>AppointmentForm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <div class="container">
+        <h1>Make Your Appointment</h1>
+        <p class="app-descr">Visit Offline</p>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href='all.html'>Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crowdsource.html">Crowd Source<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+</nav>
+
+  <body class="appointment">
+    <div class="main-block">
+      <form class="makeAppointment" action="/">
+        <br/>
+          <h2 class="appoint">Appointment Information</h2>
+          <br/>
+          <div class="item">
+            <label for="fname">Visitor's First Name<span></span></label>
+            <input id="fname" type="text" name="fname"/>
+          </div>
+          <div class="item">
+            <label for="lname">Visitor's Last Name<span></span></label>
+            <input id="lname" type="text" name="lname"/>
+          </div>
+          <div class="item">
+            <label for="phone">Phone Number<span></span></label>
+            <input id="phone" type="number" name="phone"/>
+          </div>
+          <div class="item">
+            <label>Are you a UW student?</label>
+            <div class="studentAnswer">
+              <div>
+                <input type="radio" value="none" id="yes" name="student"/>
+                <label for="yes" class="radio"><span>Yes</span></label>
+              </div>
+              <div>
+                <input type="radio" value="none" id="no" name="student"/>
+                <label for="no" class="radio"><span>No</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <label for="date">Date<span>*</span></label>
+            <input id="date" type="date" name="date"/>
+          </div>
+          <div class="item">
+            <label>Time</label>
+            <select>
+              <option selected value="" disabled selected></option>
+              <option value="9-10" >9am - 10am</option>
+              <option value="10-11">10am - 11am</option>
+              <option value="11-12">11am - 12pm</option>
+              <option value="2-3" >2pm - 3pm</option>
+              <option value="3-4">3pm - 4pm</option>
+              <option value="4-5">4pm - 5pm</option>
+              <option value="5-6">5pm - 6pm</option>
+            </select>
+          </div>
+          <div class="item">
+            <label>Meeting Location</label>
+            <div class="MeetingLocation">
+              <div>
+                <input type="radio" value="none" id="gate" name="location"/>
+                <label for="gate" class="radio"><span>Main Gate</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="none" id="office" name="location"/>
+                <label for="office" class="radio"><span>Leasing Office</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <label for="box">Please text in the room type(s) you want to visit </label>
+            <textarea id="box" rows="3"></textarea>
+          </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

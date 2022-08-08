@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
 * {
   box-sizing: border-box;
 }
 
->>>>>>> main
 html {
 	margin: 0;
 	padding: 0;
@@ -178,8 +175,6 @@ body {
     width: fit-content;
   }
 
-<<<<<<< HEAD
-=======
   .resident {
     font-weight: 400;
     color: #b29650;
@@ -276,7 +271,57 @@ body {
     word-break: keep-all;
     }
   }
->>>>>>> main
+
+  .makeAppointment {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px #ccc; 
+    background: #f1ede3;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px; 
+    }
+
+  .item {
+    position: relative;
+    margin: 10px 0;
+    }
+
+  input {
+    width: 40%;
+    padding: 6px;
+    }
+
+  input[type="radio"] {
+    width: 15px;
+    padding: 4px 5px;
+    }
+
+  .item label {
+    padding: 3px;
+  }
+
+  @media (min-width: 568px) {
+    input {
+      width: 50%;
+      padding: 8px;
+      }
+    
+    input[type="radio"] {
+      width: 15px;
+      padding: 4px 7px;
+      }
+    
+    .makeAppointment {
+      width: 70%;
+      padding: 20px;
+      box-shadow: 0 2px 5px #ccc; 
+      background: #f1ede3;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px; 
+      }
+  }    
 
   @media(min-width: 768px) {
     body {
