@@ -54,11 +54,11 @@
           <h2 class="appoint">Appointment Information</h2>
           <br/>
           <div class="item">
-            <label for="fname">Visitor's First Name<span></span></label>
+            <label for="fname">Visitor's First Name</label>
             <input id="fname" type="text" name="fname"/>
           </div>
           <div class="item">
-            <label for="lname">Visitor's Last Name<span></span></label>
+            <label for="lname">Visitor's Last Name</label>
             <input id="lname" type="text" name="lname"/>
           </div>
           <div class="item">
@@ -66,15 +66,11 @@
             <input id="phone" type="number" name="phone"/>
           </div>
           <div class="item">
-            <label>Are you a UW student?</label>
+            <label>check UW student</label>
             <div class="studentAnswer">
               <div>
-                <input type="radio" value="none" id="yes" name="student"/>
-                <label for="yes" class="radio"><span>Yes</span></label>
-              </div>
-              <div>
-                <input type="radio" value="none" id="no" name="student"/>
-                <label for="no" class="radio"><span>No</span></label>
+                <input type="checkbox" id="uwStudent" name="uwCheck">
+                <label for="uwStudent"> check</label>
               </div>
             </div>
           </div>
@@ -99,11 +95,11 @@
             <label>Meeting Location</label>
             <div class="MeetingLocation">
               <div>
-                <input type="radio" value="none" id="gate" name="location"/>
+                <input type="radio" value="gate" id="gate" name="location"/>
                 <label for="gate" class="radio"><span>Main Gate</span></label>
               </div>
               <div>
-                <input  type="radio" value="none" id="office" name="location"/>
+                <input  type="radio" value="office" id="office" name="location"/>
                 <label for="office" class="radio"><span>Leasing Office</span></label>
               </div>
             </div>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './index.css';
+import { Appointment } from './appointment.js';
 
 export default function App() {
     return (

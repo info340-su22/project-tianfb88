@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+  height: 100%;
+}
+
+header {
+  background-color: #4b2e83;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: xx-large;
+  padding: 15px;
+}
+
+nav{
+  font-size: larger;
+  padding: 13px;
+}
+
+.app-descr {
+  font-size: medium;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.main-header{
+    text-align: center;
+}
+
+.input-text{
+  font-size: x-large;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 240, 240);
+    color: rgb(66, 64, 64);
+  }
+  
+  div{
+    display: flex;
+  }
+  
+  .sect1{
+    flex-basis: 180px;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+  
+  .sect2{
+    flex: 1;
+  }
+
+  li {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  label {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
+  
+  h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  .new-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card{
+    flex: 0 0 250px;
+    background-color: white;
+    margin: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+  }
+  
+  .card p{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  
+  .card img{
+    border-radius: 10px 10px 0 0;
+  }
+  
+  main{
+    flex: 1;
+  }
+  
+  main > div{
+    height: 100%;
+  }
+
+  .sect3{
+    display:none;
+  }
+
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:left;
+    text-indent:10px;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  
+  .container {
+    width: fit-content;
+  }
+
+  .resident {
+    font-weight: 400;
+    color: #b29650;
+    }
+    h5 {
+    margin: 22px 0 4px;
+    color: #4b4c4d;
+    }
+    .main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    }
+    .rate {
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0 2px 5px #ccc; 
+    background: #fafafa;
+    }
+    td > input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    }
+    textarea {
+    width: calc(100% - 6px);
+    outline: none;
+    }
+    input:hover, textarea:hover {
+    outline: none;
+    border: 1px solid #b29650;
+    }
+    th, td {
+    width: 15%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    vertical-align: unset;
+    line-height: 18px;
+    font-weight: 400;
+    word-break: break-all;
+    }
+    .additional-question th, .additional-question td {
+    width: 38%;
+    }
+    .course-rate th, .course-rate td {
+    width: 19%;
+    }
+    .first-col, .additional-question  .first-col, .course-rate .first-col {
+    width: 24%;
+    text-align: left;
+    font-size: larger;
+    color: #4b4c4d;
+    }
+    .question, .comments {
+    margin: 15px 0 5px;
+    }
+    .question-answer label {
+    display: inline-block;
+    padding: 0 20px 15px 0;
+    }
+    .question-answer input {
+    width: auto;
+    }
+    .question-answer, table {
+    width: 100%;
+    }
+    .comments {
+      font-size: large;
+      color: #4b4c4d;
+    }
+    .btn-block {
+    margin-top: 20px;
+    text-align: center;
+    }
+    .sub {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #4b2e83;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    }
+    .sub:hover {
+    background: #b29650;
+    }
+    @media (min-width: 568px) {
+    th, td {
+    word-break: keep-all;
+    }
+  }
+
+<<<<<<< HEAD
+  .makeAppointment {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px #ccc; 
+    background: #f1ede3;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px; 
+    }
+
+  .item {
+    position: relative;
+    margin: 10px 0;
+    }
+
+  input {
+    width: 40%;
+    padding: 6px;
+    }
+
+  input[type="radio"] {
+    width: 15px;
+    padding: 4px 5px;
+    }
+
+  .item label {
+    padding: 3px;
+  }
+
+  @media (min-width: 568px) {
+    input {
+      width: 50%;
+      padding: 8px;
+      }
+    
+    input[type="radio"] {
+      width: 15px;
+      padding: 4px 7px;
+      }
+    
+    .makeAppointment {
+      width: 70%;
+      padding: 20px;
+      box-shadow: 0 2px 5px #ccc; 
+      background: #f1ede3;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px; 
+      }
+  }    
+
+=======
+>>>>>>> origin/Sylvia
+  @media(min-width: 768px) {
+    body {
+      background-image: url(../img/rent.jpeg);
+    }
+
+    .sect3{
+      display:block;
+      flex-basis: 240px;
+      flex-shrink: 0;
+    }
+
+    h4{
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      font-size: xx-large;
+    }
+    .suggest{
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .info {
+      font-weight: bolder;
+    }
+  }
