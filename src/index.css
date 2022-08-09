@@ -272,7 +272,6 @@ body {
     }
   }
 
-<<<<<<< HEAD
   .makeAppointment {
     width: 100%;
     padding: 20px;
@@ -324,8 +323,6 @@ body {
       }
   }    
 
-=======
->>>>>>> origin/Sylvia
   @media(min-width: 768px) {
     body {
       background-image: url(../img/rent.jpeg);
