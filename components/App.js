@@ -1,67 +1,61 @@
 import React, { useState } from 'react';
+import {filter} from './filter';
+import {crowdsource} from './crowdsource';
 
-export default function App() {
+export default function App(props) {
     return (
         <body>
             <header>
-                <div class="container">
-                <h1>Crowd Source</h1>
-                <p class="app-descr">real ratings</p>
+                <div className="container">
+                    <h1>Find My Apartment</h1>
+                    <p className="app-descr">UW</p>
                 </div>
             </header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <a className="navbar-brand" href="#"></a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
             
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href='#'>Home <span class="sr-only">(current)</span></a>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item active">
+                    <a className="nav-link" href='#'>Home <span className="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="crowdsource.html">Crowd Source<span class="sr-only">(current)</span></a>
+                    <li className="nav-item">
+                    <a className="nav-link" href="crowdsource.html">Crowd Source</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="About_us.html">About Us</a>
+                    <li className="nav-item">
+                    <a className="nav-link" href="About_us.html">About Us</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <li className="nav-item">
+                    <a className="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form className="form-inline my-2 my-lg-0">
+                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 </div>
             </nav>
             <main>
-                <div class="container">
-                    <section class="sect1">
-                    <h3 class="question"></h3>
-                    <div class="form-check">
-                    </div>
-                    <h3 class="question"></h3>
-                    <div class="form-check">
-                    </div>
-                    <h3 class="question"></h3>
-                    <div class="form-check">
-                    </div>
+                <div className="container">
+                    <section className="sect1">
+                        <filter />
                     </section>
-                    <section class="sect2">
-                        <div class="new-container">
-                            <div class="card" style="width: 20rem;">
+                    <section className="sect2">
+                        <div className="new-container">
+                            <div className="card" style="width: 20rem;">
                             </div>
                         </div>
                     </section>
-                    <section class="sect3">
-                        <ul class="info">
+                    <section className="sect3">
+                        <ul className="info">
                         </ul>
                     </section>
                 </div>
             </main>
-            <div class="footer-basic">
+            <div className="footer-basic">
                 <footer>
                 </footer>
             </div>
