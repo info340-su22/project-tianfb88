@@ -1,22 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
-import '.css/style.css';
+import './index.css';
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import {Appointment} from './appointment.js';
-import {CrowdSource} from './crowdsource';
+import Appointment from './components/appointment';
+import CrowdSource from './components/crowdsource';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<Home />} />
+        <Route path="/" element={<App />}>
+          <Route index element={<App />} />
           <Route path="appointment" element={<Appointment />}>
             <Route path="crowdsource" element={<CrowdSource />} />
           </Route>

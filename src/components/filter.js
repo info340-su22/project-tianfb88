@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export function filter(props) {
+export function Filter(props) {
     const [inputValue, setInputValue] = useState('');
     return(
         <section className='sect1'>
