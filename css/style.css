@@ -1,18 +1,22 @@
 * {box-sizing: border-box}
 
+
 .container {
   padding: 16px;
 }
 
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 20px 0;
   display: inline-block;
   border: none;
+  background: #f1f1f1;
 }
 
 input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
   outline: none;
 }
 
@@ -23,8 +27,8 @@ hr {
 }
 
 
-.signupbt {
-  background-color: #4b82f1;
+.registerbtn {
+  background-color: #38a5f3;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -34,15 +38,17 @@ hr {
   opacity: 0.9;
 }
 
-.signupbt:hover {
+.registerbtn:hover {
   opacity:1;
 }
 
 
 a {
-  color: rgb(30, 143, 255);
+  color: rgba(115, 184, 253, 0.91);
 }
 
+
 .signin {
+  background-color: #f1f1f1;
   text-align: center;
 }
