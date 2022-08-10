@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {filter} from './filter';
+import {Filter} from './filter';
 import { Link } from "react-router-dom";
 
 export default function App(props) {
@@ -23,7 +23,7 @@ export default function App(props) {
                     <a className="nav-link" href='#'>Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                    <Link to="crowdsource" className="nav-link">Crowd Source</Link>
+                    <Link to="crowdsource" className="nav-link">Crowd Source <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link" href="#">About Us</a>
@@ -41,7 +41,7 @@ export default function App(props) {
             <main>
                 <div className="container">
                     <section className="sect1">
-                        <filter />
+                        <Filter />
                     </section>
                     <section className="sect2">
                         <div className="new-container">

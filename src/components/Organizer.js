@@ -24,7 +24,7 @@ export default function Organizer(props) {
 //meeting location: if not meet at the main gate, (else)meet at leasing office
   let meetLoc = appointment.map((eachApt) => {
     let count = 0
-    if (eachApt['mainGate' === true) {
+    if (eachApt['mainGate'] === true) {
       count++
     }
     return count

@@ -23,16 +23,16 @@ export default function CrowdSource(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                    <a className="nav-link" href='all.html'>Home</a>
-                    </li>
-                    <li classname="nav-item">
-                    <a className="nav-link" href="#">Crowd Source<span className="sr-only">(current)</span></a>
+                    <Link to="home" className="nav-link">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="About_us.html">About Us</a>
+                    <Link to="crowdsource" className="nav-link">Crowd Source <span className="sr-only">(current)</span></Link>
                     </li>
-                    <li classNme="nav-item">
-                    <a className="nav-link" href="#">Contact Us</a>
+                    <li className="nav-item">
+                    <a className="nav-link" href="#">About Us</a>
+                    </li>
+                    <li className="nav-item">
+                    <Link to="profile" className="nav-link">Profile <span className="sr-only">(current)</span></Link>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">

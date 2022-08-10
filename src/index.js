@@ -10,20 +10,21 @@ import {
 import Appointment from './components/appointment';
 import CrowdSource from './components/crowdsource';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<App />} />
-          <Route path="appointment" element={<Appointment />}>
-            <Route path="crowdsource" element={<CrowdSource />} />
-          </Route>
-        </Route>
+        <Route path="home" element={<App />} />
+        <Route index element={<App />} />
+        <Route path="appointment" element={<Appointment />} />
+        <Route path="crowdsource" element={<CrowdSource />} />
       </Routes>
+
+      <App />
     </BrowserRouter>
-    <App />
+    
   </React.StrictMode>  
 
 );
