@@ -1,0 +1,130 @@
+[
+    {
+        "img":"img/cedar.jpg",
+        "name": "Cedar Apartments",
+        "location": "On-campus Apartment",
+        "floorplan":"Studio, 2B1B, 4B2B",
+        "address":"1112 NE 41st Street, Seattle, WA 98105",
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Cedar-Apartments"
+    },
+    {
+        "img":"img/bridges.jpg",
+        "name": "Bridges @ 11th Apartments",
+        "location": "Off-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B2B, 3B2B",
+        "address":"4557 11th Avenue NE, Seattle, WA 98105",
+        "link":"https://www.americancampus.com/student-apartments/wa/seattle/bridges-at-11th"
+    },
+    {
+        "img":"img/Commodore.jpeg",
+        "name": "Commodore Duchess",
+        "location": "On-campus Apartment",
+        "floorplan":"Studio, 1B1B",
+        "address":"4055 15th Ave NE, Seattle, WA 98105",
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Commodore-Duchess"
+    },
+    {
+        "img":"img/Mercer.jpeg",
+        "name": "Mercer Apartment",
+        "location": "On-campus Apartment",
+        "floorplan":"Studio, 2B1B, 3B1B, 4B2B",
+        "address":"3925 Adams Lane NE, Seattle, WA 98105",
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Mercer-Court-A%E2%80%93C"
+    },
+    {
+        "img":"img/Nordheim.jpeg",
+        "name": "Nordheim Court",
+        "location": "On-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B1B, 4B2B",
+        "address":"5000 25th Avenue NE, Seattle, WA 98105",
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Nordheim-Court"
+    },
+    {
+        "img":"img/Radford.jpeg",
+        "name": "Radford Court",
+        "location": "On-campus Apartment",
+        "floorplan":"1B1B, 2B1B, 3B1B",
+        "address":"6301 65th Ave NE, Seattle, WA 98115",
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Radford-Court"
+    },
+    {
+        "img":"img/Stevens.jpeg",
+        "name": "Stevens Court",
+        "location": "On-campus Apartment",
+        "floorplan":"4B1B, 4B2B",
+        "address":"3801 Brooklyn Avenue NE, Seattle, WA 98105",
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Stevens-Court"
+    },
+    {
+        "img":"img/twelve.jpeg",
+        "name": "TWELVE at U District",
+        "location": "Off-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B1B, 2B2B",
+        "address":"4535 12th Avenue NE, Seattle, WA 98105",
+        "link":"https://www.americancampus.com/student-apartments/wa/seattle/twelve-at-u-district"
+    },
+    {
+        "img":"img/nolan.jpeg",
+        "name": "NOLAN Apartment",
+        "location": "Off-campus Apartment",
+        "floorplan":"2B1B, 2B2B, 4B2B, 5B3B",
+        "address":"4717 Brooklyn Ave NE, Seattle, WA 98105",
+        "link":"https://liveatnolan.com/"
+    },
+    {
+        "img":"img/nora.jpeg",
+        "name": "Nora Apartment",
+        "location": "Off-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B1B",
+        "address":"4106 12th Ave NE, Seattle, WA 98105",
+        "link":"https://liveatnora.com/"
+    },
+    {
+        "img":"img/augusta.jpeg",
+        "name": "Augusta Apartment",
+        "location": "Off-campus Apartment",
+        "floorplan":"1B1B, 2B2B",
+        "address":"4041 Roosevelt Way NE, Seattle, WA 98105",
+        "link":"https://home.securityproperties.com/augusta/"
+    },
+    {
+        "img":"img/trinity.jpeg",
+        "name": "Trinity Apartment",
+        "location": "Off-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B1B, 2B2B",
+        "address":"902 NE 43rd St, Seattle, WA 98105",
+        "link":"https://www.206pm.com/trinity-43rd-apartments"
+    },
+    {
+        "img":"img/trailside.jpeg",
+        "name": "Trailside Apartment",
+        "location": "Off-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B1B, 2B2B, 3B3B, 4B4B, 5B5B",
+        "address":"4801 24th Avenue NE, Seattle, WA 98105",
+        "link":"https://trailsidestudentliving.com/zh/"
+    },
+    {
+        "img":"img/arista.jpeg",
+        "name": "Arista Apartment",
+        "location": "Off-campus Apartment",
+        "floorplan":"1B1B, 2B2B, 3B3B",
+        "address":"4715 25th Avenue NE, Seattle, WA 98105",
+        "link":"https://livearista.com/?utm_source=GoogleLocalListing&utm_medium=organic"
+    },
+    {
+        "img":"img/kennedy.jpeg",
+        "name": "The Kennedy Building",
+        "location": "Off-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B1B",
+        "address":"903 NE 45th St., Seattle, WA 98105",
+        "link":"https://www.udr.com/seattle-apartments/downtown-seattle/the-kennedy-building/"
+    },
+    {
+        "img":"img/theM.jpeg",
+        "name": "The M Apartment",
+        "location": "Off-campus Apartment",
+        "floorplan":"Studio, 1B1B, 2B2B, 4B2B",
+        "address":"4700 Brooklyn Ave NE, Seattle, WA 98105",
+        "link":"https://www.themseattle.com/?utm_source=GoogleLocalListing&utm_medium=organic"
+    }
+]

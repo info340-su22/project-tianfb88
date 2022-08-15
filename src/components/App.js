@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
-import {Filter} from './filter';
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from 'react-router-dom';
+import Appointment from './appointment';
+import Crowdsource from './crowdsource';
+import FilterPage from './filter';
+import Organizer from './Organizer';
+import Profile from './profile';
+import Footer from './footer';
+import SectionThree from './sect3';
 
-export default function App(props) {
+function App(props) {
     return (
-        <body>
+        <div>
             <header>
                 <div className="container">
                     <h1>Find My Apartment</h1>
@@ -23,7 +29,7 @@ export default function App(props) {
                     <a className="nav-link" href='#'>Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                    <Link to="crowdsource" className="nav-link">Crowd Source <span className="sr-only">(current)</span></Link>
+                    <Link to="/crowdsource" className="nav-link">Crowd Source <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link" href="#">About Us</a>
@@ -41,7 +47,9 @@ export default function App(props) {
             <main>
                 <div className="container">
                     <section className="sect1">
-                        <Filter />
+                    <Routes>
+                        <Route path="filter" element={<FilterPage />} />
+                    </Routes>
                     </section>
                     <section className="sect2">
                         <div className="new-container">
@@ -79,18 +87,17 @@ export default function App(props) {
                         </div>
                     </section>
                     <section className="sect3">
-                        <ul className="info">
-                        </ul>
+                        <Routes>
+                            <Route path='sect3' element={<SectionThree />} />
+                        </Routes>
                     </section>
                 </div>
             </main>
             <div className="footer-basic">
-                <footer>
-
-                </footer>
+                <Routes>
+                    <Route path='filter' element={<Footer />} />
+                </Routes>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-        </body>
+        </div>
     )
 }
