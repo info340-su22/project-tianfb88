@@ -24,7 +24,7 @@ export default function HeaderNav(props) {
                         <Link to="/crowdsource" className="nav-link">Crowd Source <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='' className="nav-link" href="#">About Us</Link>
+                        <Link to='/about' className="nav-link" href="#">About Us</Link>
                     </li>
                     <li className="nav-item">
                         <Link to='' className="nav-link" href="#"></Link>
