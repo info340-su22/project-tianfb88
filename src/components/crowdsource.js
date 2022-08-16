@@ -9,40 +9,15 @@ export default function CrowdSource(props) {
     }
     
     return(
-        <body className="crowd">
-            <header>
-                <div className="container">
-                <h1>Crowd Source</h1>
-                <p className="app-descr">real ratings</p>
-                </div>
-            </header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="#"></a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-            
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
-                    <Link to="home" className="nav-link">Home <span className="sr-only">(current)</span></Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="crowdsource" className="nav-link">Crowd Source <span className="sr-only">(current)</span></Link>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link" href="#">About Us</a>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="profile" className="nav-link">Profile <span className="sr-only">(current)</span></Link>
-                    </li>
-                </ul>
-                <form className="form-inline my-2 my-lg-0">
-                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                </div>
-            </nav>
+        <div className='crowd'>
+            <Routes>
+                <Routes path='header' element={<Header />} />
+            </Routes>
+            <Routes>
+                <Route path="nav" element={<Nav />} />
+                <Route path="crowdsource" element={<Crowdsource />} />
+                <Route path="about" element={<About />} />
+            </Routes>
             <main>
                 <div className="main-block">
                     <form className="rate" action="/">
@@ -51,6 +26,32 @@ export default function CrowdSource(props) {
                     <input type="text"/>
                     <div>
                         <table>
+                        <tr>
+                            <th className="second-col"></th>
+                            <th>On Campus</th>
+                            <th>Off Campus</th>
+                        </tr>
+                        <tr>
+                            <td className="second-col">Location</td>
+                            <td><input type="radio" value="On-campus Apartment" name="location" /></td>
+                            <td><input type="radio" value="Off-campus Apartment" name="location" /></td>
+                        </tr>
+                        <tr>
+                            <th className="second-col"></th>
+                            <th>Studio</th>
+                            <th>1B</th>
+                            <th>2B</th>
+                            <th>3B</th>
+                            <th>4B</th>
+                        </tr>
+                        <tr>
+                            <td className="second-col">Floor Plans</td>
+                            <td><input type="checkbox" value="Studio" name="floor" /></td>
+                            <td><input type="checkbox" value="1B" name="floor" /></td>
+                            <td><input type="checkbox" value="2B" name="floor" /></td>
+                            <td><input type="checkbox" value="3B" name="floor" /></td>
+                            <td><input type="checkbox" value="4B" name="floor" /></td>
+                        </tr>
                         <tr>
                             <th className="first-col"></th>
                             <th>1</th>
@@ -61,51 +62,11 @@ export default function CrowdSource(props) {
                         </tr>
                         <tr>
                             <td className="first-col">1. Distance to UW Campus</td>
-                            <td><input type="radio" value="none" name="distance" /></td>
-                            <td><input type="radio" value="none" name="distance" /></td>
-                            <td><input type="radio" value="none" name="distance" /></td>
-                            <td><input type="radio" value="none" name="distance" /></td>
-                            <td><input type="radio" value="none" name="distance" /></td>
-                        </tr>
-                        <tr>
-                            <td className="first-col">2. Affordability</td>
-                            <td><input type="radio" value="none" name="afford" /></td>
-                            <td><input type="radio" value="none" name="afford" /></td>
-                            <td><input type="radio" value="none" name="afford" /></td>
-                            <td><input type="radio" value="none" name="afford" /></td>
-                            <td><input type="radio" value="none" name="afford" /></td>
-                        </tr>
-                        <tr>
-                            <td className="first-col">3. Safety</td>
-                            <td><input type="radio" value="none" name="safe" /></td>
-                            <td><input type="radio" value="none" name="safe" /></td>
-                            <td><input type="radio" value="none" name="safe" /></td>
-                            <td><input type="radio" value="none" name="safe" /></td>
-                            <td><input type="radio" value="none" name="safe" /></td>
-                        </tr>
-                        <tr>
-                            <td className="first-col">4. Amenities</td>
-                            <td><input type="radio" value="none" name="amenity" /></td>
-                            <td><input type="radio" value="none" name="amenity" /></td>
-                            <td><input type="radio" value="none" name="amenity" /></td>
-                            <td><input type="radio" value="none" name="amenity" /></td>
-                            <td><input type="radio" value="none" name="amenity" /></td>
-                        </tr>
-                        <tr>
-                            <td className="first-col">5. Various Floor Plans</td>
-                            <td><input type="radio" value="none" name="floor" /></td>
-                            <td><input type="radio" value="none" name="floor" /></td>
-                            <td><input type="radio" value="none" name="floor" /></td>
-                            <td><input type="radio" value="none" name="floor" /></td>
-                            <td><input type="radio" value="none" name="floor" /></td>
-                        </tr>
-                        <tr>
-                            <td className="first-col">6. Public Facilities</td>
-                            <td><input type="radio" value="none" name="facility" /></td>
-                            <td><input type="radio" value="none" name="facility" /></td>
-                            <td><input type="radio" value="none" name="facility" /></td>
-                            <td><input type="radio" value="none" name="facility" /></td>
-                            <td><input type="radio" value="none" name="facility" /></td>
+                            <td><input type="radio" value="1" name="distance" /></td>
+                            <td><input type="radio" value="2" name="distance" /></td>
+                            <td><input type="radio" value="3" name="distance" /></td>
+                            <td><input type="radio" value="4" name="distance" /></td>
+                            <td><input type="radio" value="5" name="distance" /></td>
                         </tr>
                         </table>
                     </div>
@@ -122,6 +83,6 @@ export default function CrowdSource(props) {
                     <Route path='filter' element={<Footer />} />
                 </Routes>
             </div>
-        </body>
+        </div>
     )
 }
