@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 function Filter(props) {
     const [textInput, setTextInput] = useState("");
-    const [onCampus, setOnCampus] = useState(false);
-    const [offCampus, setOffCampus] = useState(false);
-    const [studio, setStudio] = useState(false);
-    const [oneB, setOneB] = useState(false);
-    const [twoB, setTwoB] = useState(false);
-    const [thrB, setThrB] = useState(false);
-    const [fourB, setFourB] = useState(false);
+    const [onC, setOnCampus] = useState(false);
+    const [offC, setOffCampus] = useState(false);
+    const [isStudio, setStudio] = useState(false);
+    const [isOne, setOneB] = useState(false);
+    const [isTwo, setTwoB] = useState(false);
+    const [isThr, setThrB] = useState(false);
+    const [isFour, setFourB] = useState(false);
 
     let inputHandler = (event) => {
         let lowerCaseInput = event.target.value.toLowerCase();
@@ -169,7 +169,6 @@ export default function PageFilter(props) {
     } else if(isFour == true) {
         apartments = apartments.filter((apt) => apt.floorPlan.includes('4B'));
     }
-    console.log(colleges);
 
     return (
         <div>
