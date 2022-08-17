@@ -64,6 +64,7 @@ function Filter(props) {
         }
     }
     return(
+
         <section className='sect1'>
             <form className="form-inline my-2 my-lg-0">
                 <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange={inputHandler} />
@@ -116,6 +117,75 @@ function Filter(props) {
                     </div>
         </section>
     )
+}
+
+function AptCard(props) {
+    let apt = props.apt;
+    let aptName = apt.name;
+    let aptLocation = 'Location: ' + apt.location;
+    let aptFloorplan = 'Floor plan: ' + apt.floorPlan;
+    let aptImage = '/img/apartment/' + apt.img;
+    let aptAddress = 'Address: ' + apt.address;
+
+    let [isSaved, setIsSaved] = useState(false);
+    let [btnStyle, setBtnStyle] = useState(["success", "add"]);
+
+    let handleClick = (event) => {
+        if (!isSaved) {
+            setIsSaved(true);
+        } else {
+            setIsSaved(false);
+        }
+        if (btnStyle[0] == "success") {
+            setBtnStyle(["danger", "close"]);
+            props.addCallback(aptName);
+        } else {
+            setBtnStyle(["success", "add"]);
+            props.deleteCallback(aptName);
+        }
+    }
+
+    return (
+        <div className="cardFrame">
+            <div className="cardShadow">
+                <img src={aptImage} className="card-img-top" alt={aptName} />
+                <div className="card-header">
+                    {aptName} <button className={'btn btn-outline-' + btnStyle[0]} type='submit' onClick={handleClick}>
+                        <span className="material-symbols-outlined pt-1">{btnStyle[1]}</span>
+                    </button>
+                </div>
+                <div className="card-body">
+                    <p className="card-text">{aptLocation}</p>
+                    <p className="card-text">{aptFloorplan}</p>
+                    <p className="card-text">{aptAddress}</p>
+                </div>
+            </div>
+        </div>
+
+    )
+
+}
+
+
+function CardList(props) {
+    let apartments = props.apartments;
+    let cardsArray = apartments.map((apt) => {
+        return <AptCard myKey={apt.key} apt={apt} addCallback={props.addCallback} deleteCallback={props.deleteCallback} />
+    })
+
+    if(cardsArray == 0) {
+        return(
+            <h2 className='result'>No results found</h2>
+        )
+    } else {
+        return (
+            <div className="cardGroup">
+                <div className="row">
+                    {cardsArray}
+                </div>
+            </div>
+        )
+    }
 }
 
 export default function PageFilter(props) {
@@ -172,7 +242,8 @@ export default function PageFilter(props) {
 
     return (
         <div>
-            <Filter applyFilterCallback={applyFilter} applySearchCallback={applySearch} />                                            
+            <Filter applyFilterCallback={applyFilter} applySearchCallback={applySearch}/>                                          
+            <CardList apartments={apartments} addCallback={props.addCallback} deleteCallback={props.deleteCallback} />                                     
         </div>
     )
 }

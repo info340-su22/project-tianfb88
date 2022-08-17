@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 import Footer from './footer';
 import { Routes, Route, Link } from 'react-router-dom';
+import Appointment from './appointment';
+import Crowdsource from './crowdsource';
+import PageFilter from './home';
+//import Organizer from './Organizer';
+import Profile from './profile';
+
+import SectionThree from './sect3';
+import Nav from './Nav';
+import About from './AboutUs';
+
+
 
 export default function CrowdSource(props) {
     const[rating, setRating] = useState(null);
@@ -10,9 +21,7 @@ export default function CrowdSource(props) {
     
     return(
         <div className='crowd'>
-            <Routes>
-                <Routes path='header' element={<Header />} />
-            </Routes>
+            
             <Routes>
                 <Route path="nav" element={<Nav />} />
                 <Route path="crowdsource" element={<Crowdsource />} />
@@ -80,7 +89,7 @@ export default function CrowdSource(props) {
             </main>
             <div className="footer-basic">
                 <Routes>
-                    <Route path='filter' element={<Footer />} />
+                    <Route path='footer' element={<Footer />} />
                 </Routes>
             </div>
         </div>
