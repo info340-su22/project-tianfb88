@@ -1,18 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Appointment from './components/appointment';
-import CrowdSource from './components/crowdsource';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+<<<<<<< HEAD
   <React.StrictMode>
     <BrowserRouter>
       <App />
@@ -20,4 +14,9 @@ root.render(
     
   </React.StrictMode>  
 
+=======
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+>>>>>>> cc7a70bc069009644331837523b628328d451f4f
 );

@@ -1,5 +1,6 @@
 [
     {
+        "key": 1,
         "img":"img/cedar.jpg",
         "name": "Cedar Apartments",
         "location": "On-campus Apartment",
@@ -8,6 +9,7 @@
         "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Cedar-Apartments"
     },
     {
+        "key": 2,
         "img":"img/bridges.jpg",
         "name": "Bridges @ 11th Apartments",
         "location": "Off-campus Apartment",
@@ -16,6 +18,7 @@
         "link":"https://www.americancampus.com/student-apartments/wa/seattle/bridges-at-11th"
     },
     {
+        "key": 3,
         "img":"img/Commodore.jpeg",
         "name": "Commodore Duchess",
         "location": "On-campus Apartment",
@@ -24,6 +27,7 @@
         "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Commodore-Duchess"
     },
     {
+        "key": 4,
         "img":"img/Mercer.jpeg",
         "name": "Mercer Apartment",
         "location": "On-campus Apartment",
@@ -32,6 +36,7 @@
         "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Mercer-Court-A%E2%80%93C"
     },
     {
+        "key": 5,
         "img":"img/Nordheim.jpeg",
         "name": "Nordheim Court",
         "location": "On-campus Apartment",
@@ -40,6 +45,7 @@
         "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Nordheim-Court"
     },
     {
+        "key": 6,
         "img":"img/Radford.jpeg",
         "name": "Radford Court",
         "location": "On-campus Apartment",
@@ -48,6 +54,7 @@
         "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Radford-Court"
     },
     {
+        "key": 7,
         "img":"img/Stevens.jpeg",
         "name": "Stevens Court",
         "location": "On-campus Apartment",
@@ -56,6 +63,7 @@
         "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Stevens-Court"
     },
     {
+        "key": 8,
         "img":"img/twelve.jpeg",
         "name": "TWELVE at U District",
         "location": "Off-campus Apartment",
@@ -64,6 +72,7 @@
         "link":"https://www.americancampus.com/student-apartments/wa/seattle/twelve-at-u-district"
     },
     {
+        "key": 9,
         "img":"img/nolan.jpeg",
         "name": "NOLAN Apartment",
         "location": "Off-campus Apartment",
@@ -72,6 +81,7 @@
         "link":"https://liveatnolan.com/"
     },
     {
+        "key": 10,
         "img":"img/nora.jpeg",
         "name": "Nora Apartment",
         "location": "Off-campus Apartment",
@@ -80,6 +90,7 @@
         "link":"https://liveatnora.com/"
     },
     {
+        "key": 11,
         "img":"img/augusta.jpeg",
         "name": "Augusta Apartment",
         "location": "Off-campus Apartment",
@@ -88,6 +99,7 @@
         "link":"https://home.securityproperties.com/augusta/"
     },
     {
+        "key": 12,
         "img":"img/trinity.jpeg",
         "name": "Trinity Apartment",
         "location": "Off-campus Apartment",
@@ -96,6 +108,7 @@
         "link":"https://www.206pm.com/trinity-43rd-apartments"
     },
     {
+        "key": 13,
         "img":"img/trailside.jpeg",
         "name": "Trailside Apartment",
         "location": "Off-campus Apartment",
@@ -104,6 +117,7 @@
         "link":"https://trailsidestudentliving.com/zh/"
     },
     {
+        "key": 14,
         "img":"img/arista.jpeg",
         "name": "Arista Apartment",
         "location": "Off-campus Apartment",
@@ -112,6 +126,7 @@
         "link":"https://livearista.com/?utm_source=GoogleLocalListing&utm_medium=organic"
     },
     {
+        "key": 15,
         "img":"img/kennedy.jpeg",
         "name": "The Kennedy Building",
         "location": "Off-campus Apartment",
@@ -120,6 +135,7 @@
         "link":"https://www.udr.com/seattle-apartments/downtown-seattle/the-kennedy-building/"
     },
     {
+        "key": 16,
         "img":"img/theM.jpeg",
         "name": "The M Apartment",
         "location": "Off-campus Apartment",
