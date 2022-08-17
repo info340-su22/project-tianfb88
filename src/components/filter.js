@@ -159,9 +159,8 @@ export default function PageFilter(props) {
 
     if (isStudio == true) {
         apartments = apartments.filter((apt) => apt.floorPlan.includes('Studio'));
-        if(isOne == true) {
-            apartments = apartments.filter((apt) => apt.floorPlan.includes('1B'));
-        }
+    } else if(isOne == true) {
+        apartments = apartments.filter((apt) => apt.floorPlan.includes('1B'));
     } else if(isTwo == true) {
         apartments = apartments.filter((apt) => apt.floorPlan.includes('2B'));
     } else if(isThr == true) {
