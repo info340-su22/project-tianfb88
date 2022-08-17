@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
 
-export default function Appointment() {
+export default function Appointment(props) {
   const [state, setState] = useState({
     fname: "",
     lname: "",
@@ -18,17 +18,20 @@ export default function Appointment() {
       ...state,
       [e.target.name]: value,
     })
+
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Submit', state);
+    props.addCallBack(state);
   }
 
   return (
     <div>
       <main>
         <div className="main-block">
-          <form className="makeAppointment" action="/">
+          <form className="makeAppointment"  onClick={handleSubmit} action="/">
             <br/>
               <h2 className="appoint">Appointment Information</h2>
               <br/>
@@ -65,8 +68,8 @@ export default function Appointment() {
               <div className="item">
                 <label>Time</label>
                 <select
-                    name="location"
-                    value={state.location}
+                    name="time"
+                    value={state.time}
                     onChange={handleChange}
                 >
                   <option defaultValue=""></option>
@@ -97,7 +100,7 @@ export default function Appointment() {
                 <textarea id="box" rows="3" name="message" value={state.message} onChange={handleChange}/>
               </div>
             <div className="btn-block">
-              <button type="submit" href="/">Submit</button>
+              <button type="submit">Submit</button>
             </div>
           </form>
         </div>
@@ -105,3 +108,4 @@ export default function Appointment() {
   </div>
   )
 }
+
