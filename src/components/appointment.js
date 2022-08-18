@@ -9,7 +9,9 @@ export default function Appointment(props) {
     message: "",
     location: "",
     uwCheck: false,
-    location: ""
+    location: "",
+    date: "",
+    time:""
   })
 
   const handleChange = e => {
@@ -24,14 +26,14 @@ export default function Appointment(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Submit', state);
-    props.addCallBack(state);
+
   }
 
   return (
     <div>
       <main>
         <div className="main-block">
-          <form className="makeAppointment"  onClick={handleSubmit} action="/">
+          <form className="makeAppointment"  onSubmit={handleSubmit} action="/">
             <br/>
               <h2 className="appoint">Appointment Information</h2>
               <br/>
@@ -62,8 +64,8 @@ export default function Appointment(props) {
                 </div>
               </div>
               <div className="item">
-                <label htmlFor="date">Date<span>*</span></label>
-                <input id="date" type="date" name="date"/>
+                <label htmlFor="date">Date</label>
+                <input id="date" type="date" name="date" value={state.date} onChange={handleChange}/>
               </div>
               <div className="item">
                 <label>Time</label>
@@ -96,11 +98,11 @@ export default function Appointment(props) {
                 </div>
               </div>
               <div className="item">
-                <label htmlFor="box">Please text in the room type(s) you want to visit </label>
+                <label htmlFor="box">Please text in the apartment name you want to visit </label>
                 <textarea id="box" rows="3" name="message" value={state.message} onChange={handleChange}/>
               </div>
             <div className="btn-block">
-              <button type="submit">Submit</button>
+              <button type="submit" onClick={handleSubmit}>Submit</button>
             </div>
           </form>
         </div>
@@ -108,4 +110,3 @@ export default function Appointment(props) {
   </div>
   )
 }
-
