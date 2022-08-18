@@ -124,7 +124,7 @@ function AptCard(props) {
     let aptLocation = 'Location: ' + apt.location;
     let aptFloorplan = 'Floor plan: ' + apt.floorplan;
     let aptImage =  apt.img;
-    let aptAddress = 'Address: ' + apt.address;
+    //let aptAddress = 'Address: ' + apt.address;
 
     let [isSaved, setIsSaved] = useState(false);
     let [btnStyle, setBtnStyle] = useState(["success", "add"]);
@@ -151,7 +151,6 @@ function AptCard(props) {
             <ul>
                 <li>{aptLocation}</li>
                 <li>{aptFloorplan}</li>
-                <li>{aptAddress}</li>
             </ul>
             <div className="card-header">
                 {aptName} <button className={'btn btn-outline-' + btnStyle[0]} type='submit' onClick={handleClick}>
