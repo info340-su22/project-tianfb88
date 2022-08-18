@@ -18,49 +18,49 @@ function Filter(props) {
 
     let handleOn = (event) => {
         let on = event.target.checked;
-        if (onC != on) {
+        if (onC !== on) {
             setOnCampus(on);
         }
     }
 
     let handleOff = (event) => {
         let off = event.target.checked;
-        if (offC != off) {
+        if (offC !== off) {
             setOffCampus(off);
         }
     }
 
     let handleOne = (event) => {
         let studioCheck = event.target.checked;
-        if (isStudio != studioCheck) {
+        if (isStudio !== studioCheck) {
             setStudio(studioCheck);
         }
     }
 
     let handleTwo = (event) => {
         let oneBCheck = event.target.checked;
-        if (isOne != oneBCheck) {
+        if (isOne !== oneBCheck) {
             setOneB(oneBCheck);
         }
     }
 
     let handleThr = (event) => {
         let twoBCheck = event.target.checked;
-        if (isTwo != twoBCheck) {
+        if (isTwo !== twoBCheck) {
             setTwoB(twoBCheck);
         }
     }
 
     let handleFour = (event) => {
         let thrBCheck = event.target.checked;
-        if (isThr != thrBCheck) {
+        if (isThr !== thrBCheck) {
             setThrB(thrBCheck);
         }
     }
 
     let handleFive = (event) => {
         let fourBCheck = event.target.checked;
-        if (isFour != fourBCheck) {
+        if (isFour !== fourBCheck) {
             setFourB(fourBCheck);
         }
     }
@@ -136,7 +136,7 @@ function AptCard(props) {
         } else {
             setIsSaved(false);
         }
-        if (btnStyle[0] == "success") {
+        if (btnStyle[0] === "success") {
             setBtnStyle(["danger", "close"]);
             props.addCallback(aptName);
         } else {
@@ -170,7 +170,7 @@ function CardList(props) {
         return <AptCard key={apt.key} apt={apt} addCallback={props.addCallback} deleteCallback={props.deleteCallback} />
     })
 
-    if(cardsArray == 0) {
+    if(cardsArray === 0) {
         return(
             <h2 className='result'>No results found</h2>
         )
@@ -226,29 +226,27 @@ export default function PageFilter(props) {
     let isThr = floorPlan.thr;
     let isFour = floorPlan.four;
 
-    if(textInput == "") {
-        apartments = apartments;
+    if(textInput === "") {
+        apartments = [...apartments];
     } else {
         apartments = apartments.filter((apt) => apt.name.toLowerCase().contains(textInput));
     }
 
-    if (onC == true && offC == false) {
-        apartments = apartments.filter((apt) => apt.location == 'On-campus Apartment');
-    } else if (offC == false && onC == true) {
-        apartments = apartments.filter((apt) => apt.location == 'Off-campus Apartment');
-    } else {
-        apartments = apartments;
+    if (onC === true && offC === false) {
+        apartments = apartments.filter((apt) => apt.location === 'On-campus Apartment');
+    } else if (offC === false && onC === true) {
+        apartments = apartments.filter((apt) => apt.location === 'Off-campus Apartment');
     }
 
-    if (isStudio == true) {
+    if (isStudio === true) {
         apartments = apartments.filter((apt) => apt.floorPlan.contains('Studio'));
-    } else if(isOne == true) {
+    } else if(isOne === true) {
         apartments = apartments.filter((apt) => apt.floorPlan.contains('1B'));
-    } else if(isTwo == true) {
+    } else if(isTwo === true) {
         apartments = apartments.filter((apt) => apt.floorPlan.contains('2B'));
-    } else if(isThr == true) {
+    } else if(isThr === true) {
         apartments = apartments.filter((apt) => apt.floorPlan.contains('3B'));
-    } else if(isFour == true) {
+    } else if(isFour === true) {
         apartments = apartments.filter((apt) => apt.floorPlan.contains('4B'));
     }
 

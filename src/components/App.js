@@ -7,6 +7,7 @@ import Nav from './Nav';
 import About from './AboutUs';
 import APT from '../data/aptData.json';
 import DetailPage from './detailPage';
+import Search from './Search';
 import _ from 'lodash';
 
 function App(props) {
@@ -32,10 +33,10 @@ function App(props) {
             <Routes>
                 <Route path= "/" element={<Nav />} >
                     <Route path ='home' element={<PageFilter apartments={APT} addCallback={addToSavedList} deleteCallback={deleteFromSavedList}/>} >
-                    <Route path="search/:aptName" element={<DetailPage />} />
+                        <Route path="home/:aptName" element={<DetailPage />} />
                     </Route>
                     <Route path="detailPage" element={<DetailPage />} />
-                    <Route path="crowdsource/*" element={<Crowdsource />} />
+                    <Route path="crowdsource/*" element={<Crowdsource data={APT} />} />
                     <Route path="appointment" element={<AppointTable />} />
                     <Route path="about" element={<About />} />
                 </Route>

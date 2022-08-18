@@ -7,7 +7,10 @@
         "floorplan":"Studio, 2B1B, 4B2B",
         "address":"1112 NE 41st Street, Seattle, WA 98105",
         "rent":"$1,436 - $1656",
-        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Cedar-Apartments"
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Cedar-Apartments",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":2,
@@ -17,7 +20,10 @@
         "floorplan":"Studio, 1B1B, 2B2B, 3B2B",
         "address":"4557 11th Avenue NE, Seattle, WA 98105",
         "rent":"$1007 to $1863 ",
-        "link":"https://www.americancampus.com/student-apartments/wa/seattle/bridges-at-11th"
+        "link":"https://www.americancampus.com/student-apartments/wa/seattle/bridges-at-11th",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":3,
@@ -27,7 +33,10 @@
         "floorplan":"Studio, 1B1B",
         "address":"4055 15th Ave NE, Seattle, WA 98105",
         "rent":"$1270 - $1975.",
-        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Commodore-Duchess"
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Commodore-Duchess",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":4,
@@ -37,7 +46,10 @@
         "floorplan":"Studio, 2B1B, 3B1B, 4B2B",
         "address":"3925 Adams Lane NE, Seattle, WA 98105",
         "rent":"$1381 to $1982",
-        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Mercer-Court-A%E2%80%93C"
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Mercer-Court-A%E2%80%93C",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":5,
@@ -47,7 +59,10 @@
         "floorplan":"Studio, 1B1B, 2B1B, 4B2B",
         "address":"5000 25th Avenue NE, Seattle, WA 98105",
         "rent":"$1433 to $2172",
-        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Nordheim-Court"
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Nordheim-Court",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":6,
@@ -57,7 +72,10 @@
         "floorplan":"1B1B, 2B1B, 3B1B",
         "address":"6301 65th Ave NE, Seattle, WA 98115",
         "rent":"$1560 - $2610",
-        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Radford-Court"
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Radford-Court",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":7,
@@ -67,7 +85,10 @@
         "floorplan":"4B1B, 4B2B",
         "address":"3801 Brooklyn Avenue NE, Seattle, WA 98105",
         "rent":"$1045 to $1215",
-        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Stevens-Court"
+        "link":"https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/Stevens-Court",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":8,
@@ -77,7 +98,10 @@
         "floorplan":"Studio, 1B1B, 2B1B, 2B2B",
         "address":"4535 12th Avenue NE, Seattle, WA 98105",
         "rent":"$899 - $2569",
-        "link":"https://www.americancampus.com/student-apartments/wa/seattle/twelve-at-u-district"
+        "link":"https://www.americancampus.com/student-apartments/wa/seattle/twelve-at-u-district",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":9,
@@ -87,7 +111,10 @@
         "floorplan":"2B1B, 2B2B, 4B2B, 5B3B",
         "address":"4717 Brooklyn Ave NE, Seattle, WA 98105",
         "rent":"$1,304 - $1,765",
-        "link":"https://liveatnolan.com/"
+        "link":"https://liveatnolan.com/",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":10,
@@ -97,7 +124,10 @@
         "floorplan":"Studio, 1B1B, 2B1B",
         "address":"4106 12th Ave NE, Seattle, WA 98105",
         "rent":"1,204 - $1,665",
-        "link":"https://liveatnora.com/"
+        "link":"https://liveatnora.com/",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":11,
@@ -107,7 +137,10 @@
         "floorplan":"1B1B, 2B2B",
         "address":"4041 Roosevelt Way NE, Seattle, WA 98105",
         "rent":"$2,360 - $6,125",
-        "link":"https://home.securityproperties.com/augusta/"
+        "link":"https://home.securityproperties.com/augusta/",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":12,
@@ -117,7 +150,10 @@
         "floorplan":"Studio, 1B1B, 2B1B, 2B2B",
         "address":"902 NE 43rd St, Seattle, WA 98105",
         "rent":"$925 - $1992",
-        "link":"https://www.206pm.com/trinity-43rd-apartments"
+        "link":"https://www.206pm.com/trinity-43rd-apartments",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":13,
@@ -127,7 +163,10 @@
         "floorplan":"Studio, 1B1B, 2B1B, 2B2B, 3B3B, 4B4B, 5B5B",
         "address":"4801 24th Avenue NE, Seattle, WA 98105",
         "rent":"$675 - $2200",
-        "link":"https://trailsidestudentliving.com/zh/"
+        "link":"https://trailsidestudentliving.com/zh/",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":14,
@@ -137,7 +176,10 @@
         "floorplan":"1B1B, 2B2B, 3B3B",
         "address":"4715 25th Avenue NE, Seattle, WA 98105",
         "rent":"$1450 - $3200",
-        "link":"https://livearista.com/?utm_source=GoogleLocalListing&utm_medium=organic"
+        "link":"https://livearista.com/?utm_source=GoogleLocalListing&utm_medium=organic",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":15,
@@ -147,7 +189,10 @@
         "floorplan":"Studio, 1B1B, 2B1B",
         "address":"903 NE 45th St., Seattle, WA 98105",
         "rent":"$1450 - $2200",
-        "link":"https://www.udr.com/seattle-apartments/downtown-seattle/the-kennedy-building/"
+        "link":"https://www.udr.com/seattle-apartments/downtown-seattle/the-kennedy-building/",
+        "rate": 0,
+        "comment":[],
+        "times":0
     },
     {   
         "key":16,
@@ -157,6 +202,9 @@
         "floorplan":"Studio, 1B1B, 2B2B, 4B2B",
         "address":"4700 Brooklyn Ave NE, Seattle, WA 98105",
         "rent":"$1267 - $2430",
-        "link":"https://www.themseattle.com/?utm_source=GoogleLocalListing&utm_medium=organic"
+        "link":"https://www.themseattle.com/?utm_source=GoogleLocalListing&utm_medium=organic",
+        "rate": 0,
+        "comment":[],
+        "times":0
     }
 ]
