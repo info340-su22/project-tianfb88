@@ -2,14 +2,36 @@ import React from "react";
 import { Outlet, Link } from "react-router-dom";
 
 export default function Nav(props) {
+    let savedList = props.apartments.map((apt) => {
+        return (
+            <Link to={"search/search/" + apt.name} className="dropdown-item">{apt.name}</Link>
+        )
+    })
+
     return(
         <div className="row">
             <div className="header">
                 <h1 className="logo">FindMyApartment</h1>
                 <div className="header-right">
-                    <Link to="/home" className="active">Home</Link>
-                    <Link to="/crowdsource">Crowd Source</Link>
-                    <Link to="/appointment">Appointment</Link>
+                <li className="navbar-item">
+                <Link to="/home" className="active">Home</Link> 
+                        </li>
+                        <li className="navbar-item">
+                        <Link to="/crowdsource">Crowd Source</Link>
+                        </li>
+                        <li className="navbar-item">
+                        <Link to="/appointment">Appointment</Link>
+                        </li>
+                    <li className="nav-item dropdown">
+                            <div className="drop-list">
+                                <a href="#" className="nav-link dropdown-toggle text-white" data-toggle="dropdown">Saved List</a>
+                                <div className="dropdown-menu">
+                                    {/* <a href="info.html" className="dropdown-item">Harvard University</a>
+                                    <a href="#" className="dropdown-item">Boston University</a> */}
+                                    {savedList}
+                                </div>
+                            </div>
+                        </li>
                     <Link to="/about">About Us</Link>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import sample_apts from '../data/data.json'
+import sample_apts from '../data/aptData.json'
 import _ from 'lodash';
 
 export default function DetailPage(props) {

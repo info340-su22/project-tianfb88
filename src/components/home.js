@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Filter(props) {
     const [textInput, setTextInput] = useState("");
@@ -156,6 +157,7 @@ function AptCard(props) {
                 {aptName} <button className={'btn btn-outline-' + btnStyle[0]} type='submit' onClick={handleClick}>
                     <span className="material-symbols-outlined pt-1">{btnStyle[1]}</span>
                 </button>
+                <Link to={'search/' + aptName} className="btn btn-primary">Learn More</Link>
             </div>
         </div>
     )
