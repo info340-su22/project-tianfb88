@@ -46,6 +46,8 @@ body {
     flex-direction: column;
     background-color: rgb(243, 240, 240);
     color: rgb(66, 64, 64);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   div{
@@ -69,12 +71,14 @@ body {
   label {
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
+    font-weight: bold;
+    color: #565759;
   }
   
   h3{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-size: larger;
   }
   
   .new-container{
@@ -211,15 +215,17 @@ body {
     border: 1px solid #b29650;
     }
     th, td {
-    width: 15%;
+    width: 13%;
     padding: 15px 0;
     border-bottom: 1px solid #ccc;
     text-align: center;
     vertical-align: unset;
     line-height: 18px;
-    font-weight: 400;
     word-break: break-all;
+    font-size: small;
+    font-weight: 500;
     }
+  
     .additional-question th, .additional-question td {
     width: 38%;
     }
@@ -269,6 +275,8 @@ body {
     @media (min-width: 568px) {
     th, td {
     word-break: keep-all;
+    font-size: medium;
+    font-weight: 400;
     }
   }
 
@@ -276,7 +284,7 @@ body {
     width: 100%;
     padding: 20px;
     box-shadow: 0 2px 5px #ccc; 
-    background: #f1ede3;
+    background: #f1f0ea;
     align-items: center;
     text-align: center;
     border-radius: 15px; 
@@ -313,10 +321,10 @@ body {
       }
     
     .makeAppointment {
-      width: 70%;
+      width: 60%;
       padding: 20px;
       box-shadow: 0 2px 5px #ccc; 
-      background: #f1ede3;
+      background: #f1f0ea;
       align-items: center;
       text-align: center;
       border-radius: 20px; 
@@ -332,12 +340,23 @@ body {
       display:block;
       flex-basis: 240px;
       flex-shrink: 0;
+      margin-top: 0.7rem;
+    }
+
+    h3{
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: x-large;
+    }
+
+    label {
+      color:#3b3c3d;
     }
 
     h4{
       font-family: 'Times New Roman', Times, serif;
       font-weight: bolder;
-      font-size: xx-large;
+      font-size: x-large;
     }
     .suggest{
       font-family: 'Times New Roman', Times, serif;
@@ -346,4 +365,5 @@ body {
     .info {
       font-weight: bolder;
     }
+
   }

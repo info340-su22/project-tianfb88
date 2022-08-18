@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href='all.html'>Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href='all.html'>Home </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Crowd Source<span class="sr-only">(current)</span></a>
@@ -36,8 +36,8 @@
         <li class="nav-item">
           <a class="nav-link" href="About_us.html">About Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Saved List</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -51,76 +51,65 @@
     <main>
         <div class="main-block">
             <form class="rate" action="/">
-              <h2 class="resident">Residents Rating</h2>
-              <h5>Apartment Name</h5>
-              <input type="text"/>
-              <div>
+            <h2 class="resident">Residents Rating</h2>
+            <h3>Apartment Name</h3>
+            <input type="text" />
+            <div>
                 <table>
-                  <tr>
-                    <th class="first-col"></th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                  </tr>
-                  <tr>
-                    <td class="first-col">1. Distance to UW Campus</td>
-                    <td><input type="radio" value="none" name="distance" /></td>
-                    <td><input type="radio" value="none" name="distance" /></td>
-                    <td><input type="radio" value="none" name="distance" /></td>
-                    <td><input type="radio" value="none" name="distance" /></td>
-                    <td><input type="radio" value="none" name="distance" /></td>
-                  </tr>
-                  <tr>
-                    <td class="first-col">2. Affordability</td>
-                    <td><input type="radio" value="none" name="afford" /></td>
-                    <td><input type="radio" value="none" name="afford" /></td>
-                    <td><input type="radio" value="none" name="afford" /></td>
-                    <td><input type="radio" value="none" name="afford" /></td>
-                    <td><input type="radio" value="none" name="afford" /></td>
-                  </tr>
-                  <tr>
-                    <td class="first-col">3. Safety</td>
-                    <td><input type="radio" value="none" name="safe" /></td>
-                    <td><input type="radio" value="none" name="safe" /></td>
-                    <td><input type="radio" value="none" name="safe" /></td>
-                    <td><input type="radio" value="none" name="safe" /></td>
-                    <td><input type="radio" value="none" name="safe" /></td>
-                  </tr>
-                  <tr>
-                    <td class="first-col">4. Amenities</td>
-                    <td><input type="radio" value="none" name="amenity" /></td>
-                    <td><input type="radio" value="none" name="amenity" /></td>
-                    <td><input type="radio" value="none" name="amenity" /></td>
-                    <td><input type="radio" value="none" name="amenity" /></td>
-                    <td><input type="radio" value="none" name="amenity" /></td>
-                  </tr>
-                  <tr>
-                    <td class="first-col">5. Various Floor Plans</td>
-                    <td><input type="radio" value="none" name="floor" /></td>
-                    <td><input type="radio" value="none" name="floor" /></td>
-                    <td><input type="radio" value="none" name="floor" /></td>
-                    <td><input type="radio" value="none" name="floor" /></td>
-                    <td><input type="radio" value="none" name="floor" /></td>
-                  </tr>
-                  <tr>
-                    <td class="first-col">6. Public Facilities</td>
-                    <td><input type="radio" value="none" name="facility" /></td>
-                    <td><input type="radio" value="none" name="facility" /></td>
-                    <td><input type="radio" value="none" name="facility" /></td>
-                    <td><input type="radio" value="none" name="facility" /></td>
-                    <td><input type="radio" value="none" name="facility" /></td>
-                  </tr>
+                    <tbody>
+                        <tr>
+                            <th class="second-col"></th>
+                            <th>On Campus</th>
+                            <th>Off Campus</th>
+                        </tr>
+                        <tr>
+                            <td class="second-col">Location</td>
+                            <td><input type="radio" value="On-campus Apartment" name="location" /></td>
+                            <td><input type="radio" value="Off-campus Apartment" name="location" /></td>
+                        </tr>
+                        <tr>
+                            <th class="second-col"></th>
+                            <th>Studio</th>
+                            <th>1B</th>
+                            <th>2B</th>
+                            <th>3B</th>
+                            <th>4B</th>
+                        </tr>
+                        <tr>
+                            <td class="second-col">Floor Plans</td>
+                            <td><input type="checkbox" value="Studio" name="floor" /></td>
+                            <td><input type="checkbox" value="1B" name="floor" /></td>
+                            <td><input type="checkbox" value="2B" name="floor" /></td>
+                            <td><input type="checkbox" value="3B" name="floor" /></td>
+                            <td><input type="checkbox" value="4B" name="floor" /></td>
+                        </tr>
+                        <tr>
+                            <th class="first-col"></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <td class="second-col">Rating</td>
+                            <td><input type="radio" value="1" name="distance" /></td>
+                            <td><input type="radio" value="2" name="distance" /></td>
+                            <td><input type="radio" value="3" name="distance" /></td>
+                            <td><input type="radio" value="4" name="distance" /></td>
+                            <td><input type="radio" value="5" name="distance" /></td>
+                        </tr>
+                    </tbody>
                 </table>
-              </div>
-              <p class="comments">Any further comment</p>
-              <textarea rows="5"></textarea>
-              <div class="btn-block">
+            </div>
+            <p class="comments">Any further comment</p>
+            <textarea rows="5" ></textarea>
+            <div class="btn-block">
                 <button class="sub" type="submit" href="/">Send</button>
-              </div>
+            </div>
             </form>
         </div>
+
     </main>
     <div class="footer-basic">
         <footer>
