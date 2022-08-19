@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { dataList } from "../data/data";
+import { Link } from "react-router-dom";
 
-const $ = window.$;
 function Crowd(props) {
   const [submitForm, setSubmitForm] = useState({
     key: 1,
@@ -27,8 +26,6 @@ function Crowd(props) {
     }
     item.times = item.rateList.length;
     item.comment.push(submitForm.comment);
-    alert("Form has been submitted!"); 
-    $(document.getElementById("reset")).click()
     return false;
   };
 
@@ -105,13 +102,9 @@ function Crowd(props) {
             ></textarea>
             <div className="btn-block">
               <button className="sub" type="button" onClick={onSubmit}>
-                Send
+                <Link to='/notify'>Send</Link>
               </button>
-              <button
-                className="subm"
-                type="reset"
-                id="reset"
-              ></button>
+              <button className="subm" type="reset" id="reset"></button>
             </div>
           </form>
         </div>
