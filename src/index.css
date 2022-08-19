@@ -22,6 +22,10 @@ nav {
   padding: 13px;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .app-descr {
   font-size: medium;
   margin-bottom: 0;
@@ -89,11 +93,17 @@ h3 {
 }
 
 .card {
+  width: 20rem;
   flex: 0 0 250px;
   background-color: white;
   margin: 0.5rem;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+div > .newButton {
+  text-align: "center";
+  display: "block"
 }
 
 .card p {
@@ -114,6 +124,30 @@ main > div {
 
 .sect3 {
   display: none;
+}
+
+.detail {
+  padding: 30;
+  display: block;
+}
+
+.info-main {
+  width: 90%; 
+  margin: 0 auto;
+}
+.detailcard {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+.addB{
+  padding: 30;
+}
+
+.cardShadow {
+  display: block
 }
 
 .footer-basic {
@@ -282,6 +316,9 @@ table {
 .sub:hover {
   background: #b29650;
 }
+.subm {
+  display: none;
+}
 @media (min-width: 568px) {
   th,
   td {
@@ -320,6 +357,28 @@ input[type="radio"] {
   padding: 3px;
 }
 
+.container-appointment .card {
+  background-color: #f1f0ea;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  height: inherit;
+  display: flex;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.table th{
+  font-size: x-small;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.table td{
+  font-size: xx-small;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 @media (min-width: 568px) {
   input {
     width: 50%;
@@ -332,13 +391,16 @@ input[type="radio"] {
   }
 
   .makeAppointment {
-    width: 60%;
-    padding: 20px;
-    box-shadow: 0 2px 5px #ccc;
-    background: #f1f0ea;
-    align-items: center;
-    text-align: center;
-    border-radius: 20px;
+    width: 80%;
+    padding: 30px;
+  }
+  
+  .table th{
+    font-size: medium;
+  }
+  
+  .table td{
+    font-size: small;
   }
 }
 
@@ -375,5 +437,21 @@ input[type="radio"] {
 
   .info {
     font-weight: bolder;
+  }
+
+  .makeAppointment {
+    width: 85%;
+    padding: 40px;
+  }
+
+  .table th{
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .table td{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
   }
 }

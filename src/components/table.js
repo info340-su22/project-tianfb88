@@ -4,12 +4,12 @@ function Table({tableData}){
             <thead>
                 <tr>
                     <th></th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Phone Number</th>
+                    <th>First N</th>
+                    <th>Last N</th>
+                    <th>Phone</th>
                     <th>Apartment</th>
-                    <th>Visit Date</th>
-                    <th>Visit Time</th>
+                    <th>Date</th>
+                    <th>Time</th>
                 </tr>
             </thead>
             <tbody>
