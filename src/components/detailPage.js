@@ -1,61 +1,43 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import sample_apts from '../data/aptData.json'
-import _ from 'lodash';
+import { useParams } from "react-router-dom";
+import React from "react";
 
-export default function DetailPage(props) {
-    const params = useParams();
-    let aptNameString = params.aptName;
+function Detail(props) {
+  const params = useParams();
+  const data = props.data.filter((item) => item.key === parseInt(params.id))[0];
 
-    let apt = _.find(sample_apts, {name: aptNameString});
-    if(!apt){
-        return(<h2>No Apartment specified</h2>);
-    }
-
-
-    let aptName = apt['name'];
-    let aptWebsite  = apt['link'];
-    let aptImg = '/img/' + apt['img'];
-    let aptFloorplan = apt['floorplan'];
-    let aptAddress = apt['address'];
-    let aptLocation = apt['location'];
-    let aptRent = apt['rent'];
-    let aptRate = apt['rate'];
-    let aptTimes = apt['times'];
-    let aptComment = apt['comment'];
-
-    return (
-        <div>
+  return (
+    <div>
 
             <header className="info-header">
                 <h2>
-                    <a href={aptWebsite}>{aptName}</a>
+                    <a href={data.link}>{data.name}</a>
                 </h2>
             </header>
 
             <main className="info-main">
                 <div className="cardFrame">
                     <div className="cardShadow">
-                        <a href={aptWebsite}><img src={aptImg} className="pb-3" alt={aptName}/></a>
+                        <a href={data.link}><img src={data.img} className="pb-3" alt={data.name}/></a>
 
                         <div className="card-body">
 
                             <div className="row">
                                 <div className="cardContent">
                                     <h2 className="card-title"><strong>Location</strong></h2>
-                                    <p className="card-text">{aptLocation}</p>
+                                    <p className="card-text">{data.location}</p>
                                     <h2 className="card-title"><strong>Address</strong></h2>
-                                    <p className="card-text">{aptAddress}</p>
+                                    <p className="card-text">{data.address}</p>
                                 </div>
                                 <div className="cardContent">
                                     <h2 className="card-title"><strong>floor Plans</strong></h2>
-                                    <p className="card-text">{aptFloorplan}</p>
+                                    <p className="card-text">{data.floorplan}</p>
                                     <h2 className="card-title"><strong>Monthly Rent</strong></h2>
-                                    <p className="card-text">{aptRent}</p>
+                                    <p className="card-text">{data.rent}</p>
                                     <h2 className="card-title"><strong>Resident's Rating</strong></h2>
-                                    <p className="card-text">{aptTimes} users have rated this apartment, the average rating is {aptRate} out of 5.</p>
+                                    <p className="card-text">{data.times} users have rated this apartment, the average rating
+                                                                          is {data.rate} out of 5.</p>
                                     <h2 className="card-title"><strong>Comments</strong></h2>
-                                    <p className="card-text">{aptComment}</p>
+                                    <p className="card-text">{data.comment.map((item) => (<p>{item}</p>))}</p>
                                 </div>
                             </div>
                         </div>
@@ -63,6 +45,8 @@ export default function DetailPage(props) {
                     </div>
                 </div>
             </main>
-        </div>
-    )
+      </div>
+  );
 }
+
+export default Detail;
