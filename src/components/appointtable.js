@@ -36,14 +36,21 @@ export default function AppointTable(){
  }  
  return(
      <React.Fragment>
-     <div className="container">
+     <div className="container-appointment">
      <div className="row">
-         <div className="col-sm-8">
-         <Appoint handleChange={handleChange} state={state} handleSubmit={handleSubmit}/>
-         <Table tableData={tableData}/>
-         </div>
-         <div className="col-sm-4">
-         </div>
+        <div className="col-lg-8">
+        <Appoint handleChange={handleChange} state={state} handleSubmit={handleSubmit}/>
+        </div>
+        <div className="col-lg-4">
+        <div className="card">
+            <div className="card-header">
+            Appointment Tracker
+            </div>
+            <div className="card-body">
+            <Table tableData={tableData}/>
+            </div>
+            </div>
+        </div>
      </div>
     </div>
      </React.Fragment>

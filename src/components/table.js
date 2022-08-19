@@ -4,9 +4,6 @@ function Table({tableData}){
             <thead>
                 <tr>
                     <th></th>
-                    <th>First N</th>
-                    <th>Last N</th>
-                    <th>Phone</th>
                     <th>Apartment</th>
                     <th>Date</th>
                     <th>Time</th>
@@ -18,9 +15,6 @@ function Table({tableData}){
                     return(
                         <tr key={index}>
                             <td>{index+1}</td>
-                            <td>{data.fname}</td>
-                            <td>{data.lname}</td>
-                            <td>{data.phone}</td>
                             <td>{data.message}</td>
                             <td>{data.date}</td>
                             <td>{data.time}</td>
