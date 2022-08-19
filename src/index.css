@@ -22,6 +22,10 @@ nav {
   padding: 13px;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .app-descr {
   font-size: medium;
   margin-bottom: 0;
@@ -89,11 +93,17 @@ h3 {
 }
 
 .card {
+  width: 20rem;
   flex: 0 0 250px;
   background-color: white;
   margin: 0.5rem;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+div > .newButton {
+  text-align: "center";
+  display: "block"
 }
 
 .card p {
@@ -114,6 +124,25 @@ main > div {
 
 .sect3 {
   display: none;
+}
+
+.info-main {
+  width: 90%; 
+  margin: 0 auto;
+}
+.detailcard {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+.addB{
+  padding: 30;
+}
+
+.cardShadow {
+  display: block
 }
 
 .footer-basic {
@@ -281,6 +310,9 @@ table {
 }
 .sub:hover {
   background: #b29650;
+}
+.subm {
+  display: none;
 }
 @media (min-width: 568px) {
   th,
