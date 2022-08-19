@@ -126,6 +126,11 @@ main > div {
   display: none;
 }
 
+.detail {
+  padding: 30;
+  display: block;
+}
+
 .info-main {
   width: 90%; 
   margin: 0 auto;
@@ -376,7 +381,7 @@ input[type="radio"] {
 
 @media (min-width: 768px) {
   body {
-    background-image: url(../img/rent.jpeg);
+    background-image: url(./img/rent.jpeg);
   }
 
   .sect3 {
