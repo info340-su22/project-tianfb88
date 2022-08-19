@@ -108,10 +108,9 @@ function Crowd(props) {
                 Send
               </button>
               <button
-                className="sub"
+                className="subm"
                 type="reset"
                 id="reset"
-                style={{ display: "none" }}
               ></button>
             </div>
           </form>
