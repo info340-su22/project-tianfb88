@@ -28,4 +28,8 @@ If you are interested in several apartments and struggle to make a decision, add
 ### About Us
 We are sophomore and junior students at the University of Washington that taking INFO 340. This is our INFO 340 Final Project.
 
-## Learn More
+### Learn More
+This provide detail information about the apartment building. Users can also see the rating in this page.
+
+### Appointment
+Helps to make appointment for visiting apartment unit, also enable to track the appointment.
