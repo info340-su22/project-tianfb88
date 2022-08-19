@@ -126,6 +126,11 @@ main > div {
   display: none;
 }
 
+.detail {
+  padding: 30;
+  display: block;
+}
+
 .info-main {
   width: 90%; 
   margin: 0 auto;
