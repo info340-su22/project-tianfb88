@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-
+import { useLocation } from "react-router-dom";
+import { parse } from "url";
 
 function Home(props) {
-
+  const { search } = parse(useLocation().search, true).query;
   const [filterData, setFilterData] = useState({
     floorplan: "Studio",
     campus: "On-campus",
@@ -19,6 +20,7 @@ function Home(props) {
     "4B2B",
     "4B4B",
   ];
+
   const campus = ["On-campus", "Off-campus"];
 
   return (
@@ -42,7 +44,7 @@ function Home(props) {
                     });
                   }}
                 />
-                <label className="form-check-label" for="flexRadioDisabled">
+                <label className="form-check-label" htmlFor="flexRadioDisabled">
                   {item}
                 </label>
               </div>
@@ -63,7 +65,7 @@ function Home(props) {
                     });
                   }}
                 />
-                <label className="form-check-label" for="flexRadioDisabled">
+                <label className="form-check-label" htmlFor="flexRadioDisabled">
                   {item}
                 </label>
               </div>
@@ -77,9 +79,9 @@ function Home(props) {
                   return (
                     <div
                       className="card"
+                     
                       key={index}
-                      style={{ width: "20rem" }}
-                    >
+                      >
                       <img src={item.img} alt="gray color apartment building" />
                       <p>{item.name}</p>
                       <ul>
@@ -92,12 +94,38 @@ function Home(props) {
                           </a>
                         </li>
                       </ul>
-                      
+                      <div className="newButton" >
+                        <button
+                          type="button"
+                          className="btn btn-info"
+                          onClick={() => {
+                            
+                          }}
+                        >
+                          learn more
+                        </button>
+                      </div>
                     </div>
                   );
                 };
 
-                
+                if (search) {
+                  console.log(search);
+                  if (item.name.match(search)) {
+                    return result();
+                  } else {
+                    return <></>;
+                  }
+                } else {
+                  if (
+                    item.location.match(filterData.campus) &&
+                    item.floorplan.match(filterData.floorplan)
+                  ) {
+                    return result();
+                  } else {
+                    return <></>;
+                  }
+                }
               })}
             </div>
           </section>
