@@ -4,7 +4,7 @@ import About from "./about";
 import Home from "./home";
 import Crowd from "./crowdsource";
 import Organizer from "./organizer";
-import Appointtable from "./appointment";
+import Appointment from "./appointtable";
 import Detail from "./detailPage";
 import Saved from "./saveList";
 import AppHeader from "./header";
@@ -35,7 +35,7 @@ function AppMain() {
         <Route path="notify" element={<Notify />}></Route>
         <Route path="noti" element={<Noti />}></Route>
         <Route path="organizer" element={<Organizer />}></Route>
-        <Route path="appointment" element={<Appointtable />}></Route>
+        <Route path="appointment" element={<Appointment />}></Route>
         <Route path="detail/:id" element={<Detail data={dataList} fun={addSaved} />}></Route>
         <Route path="saved" element={<Saved />}></Route>
       </Routes>

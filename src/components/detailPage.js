@@ -4,7 +4,6 @@ import React from "react";
 function Detail(props) {
   const params = useParams();
   const data = props.data.filter((item) => item.key === parseInt(params.id))[0];
-  
   return (
     <main className="info-main">
       <div className="detailcard">

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { parse } from "url";
 
 function Home(props) {
+  const Navigate = useNavigate();
   const { search } = parse(useLocation().search, true).query;
   const [filterData, setFilterData] = useState({
-    floorplan: "Studio",
-    campus: "On-campus",
+    floorplan: null,
+    campus: null,
   });
 
   const floorPlans = [
@@ -20,7 +21,6 @@ function Home(props) {
     "4B2B",
     "4B4B",
   ];
-
   const campus = ["On-campus", "Off-campus"];
 
   return (
@@ -99,7 +99,7 @@ function Home(props) {
                           type="button"
                           className="btn btn-info"
                           onClick={() => {
-                            
+                            Navigate(`/detail/${item.key}`);
                           }}
                         >
                           learn more
@@ -111,19 +111,23 @@ function Home(props) {
 
                 if (search) {
                   console.log(search);
-                  if (item.name.match(search)) {
+                  if (item.name.toUpperCase().match(search.toUpperCase())) {
                     return result();
                   } else {
                     return <></>;
                   }
                 } else {
-                  if (
-                    item.location.match(filterData.campus) &&
-                    item.floorplan.match(filterData.floorplan)
-                  ) {
-                    return result();
+                  if (filterData.campus || filterData.floorplan) {
+                    if (
+                      item.location.match(filterData.campus || "") &&
+                      item.floorplan.match(filterData.floorplan || "")
+                    ) {
+                      return result();
+                    } else {
+                      return <></>;
+                    }
                   } else {
-                    return <></>;
+                    return result();
                   }
                 }
               })}

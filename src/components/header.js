@@ -85,8 +85,7 @@ function AppHeader(props) {
               type="button"
               onClick={() => {
                 Navigate("/home?search=" + search);
-              }}
-            >
+              }}>
               Search
             </button>
           </form>

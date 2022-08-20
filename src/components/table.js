@@ -1,24 +1,19 @@
 function Table({tableData}){
     return(
         <table className="table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Apartment</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                </tr>
-            </thead>
             <tbody>
             {
                 tableData.map((data, index)=>{
                     return(
-                        <tr key={index}>
-                            <td>{index+1}</td>
-                            <td>{data.message}</td>
-                            <td>{data.date}</td>
-                            <td>{data.time}</td>
-                        </tr>
+                        <ul key={index}>
+                            <li>{index+1}</li>
+                            <li>First Name: {data.fname}</li>
+                            <li>Last Name: {data.lname}</li>
+                            <li>Phone Number: {data.phone}</li>
+                            <li>Apartment: {data.message}</li>
+                            <li>Date: {data.date}</li>
+                            <li>Time: {data.time}</li>
+                        </ul>
                     )
                 })
             }
