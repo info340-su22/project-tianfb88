@@ -1,4 +1,4 @@
-import data from "./aptData.json";
+import data from "./data.json";
 
 export const dataList = data;
 
