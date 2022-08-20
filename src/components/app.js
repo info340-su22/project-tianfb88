@@ -11,7 +11,6 @@ import AppHeader from "./header";
 import AppFooter from "./footer";
 import { dataList, addSaved } from "../data/data";
 import Notify from './notify';
-import Noti from './noti';
 
 function App() {
   return (
@@ -33,7 +32,6 @@ function AppMain() {
         <Route path="home" element={<Home data={dataList} />}></Route>
         <Route path="crowd" element={<Crowd data={dataList} />}></Route>
         <Route path="notify" element={<Notify />}></Route>
-        <Route path="noti" element={<Noti />}></Route>
         <Route path="organizer" element={<Organizer />}></Route>
         <Route path="appointment" element={<Appointment />}></Route>
         <Route path="detail/:id" element={<Detail data={dataList} fun={addSaved} />}></Route>
