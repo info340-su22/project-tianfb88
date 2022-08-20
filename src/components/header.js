@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from '../img/logo.jpg';
 
 function AppHeader(props) {
   const [active, setActive] = useState("Organizer");
@@ -34,7 +35,7 @@ function AppHeader(props) {
       <header>
         <div className="container">
           <h1>{active}</h1>
-          <p className="app-descr">UW</p>
+          <p className="app-descr"><img src={logo} className="App-logo" alt="logo" /></p>
         </div>
       </header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
